@@ -1,7 +1,6 @@
 {
   "name": "employee-generator",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "jest"
@@ -13,5 +12,17 @@
   },
   "devDependencies": {
     "jest": "^27.0.6"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobin14-jpg/Employee-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobin14-jpg/Employee-Generator/issues"
+  },
+  "homepage": "https://github.com/tobin14-jpg/Employee-Generator#readme",
+  "description": ""
 }

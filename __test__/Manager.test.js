@@ -1,51 +1,66 @@
-const { it, expect } = require("@jest/globals")
-const Manager = require("../employees/Manager")
+const Manager = require('../src/Manager.js');
 
-function makeManager(id = 123, email = "blah@mail.com", name = "Maccas") {
+function makeManager(
+    name = "Test Name",
+    id = 123,
+    email = 'test@email.com',
+    officeNumber = "officeNumber"
+){
 
-    return new Manager(id, email, name);
+    return new Manager(name, id, email, officeNumber);
 }
 
-describe("Test Manager", () => {
-    
-    it("should contain correct field", () => {
+describe("Test manager class", () => {
+    it("Should have the correct data options", () => {
 
-        const id = 123
-        const email = "manager@mail.com"
-        const name = "Maccas"
+        const name = "Test Name";
+        const id = 123;
+        const email = 'test@email.com';
+        const officeNumber = "officeNumber";
 
-        const manager = makeManager(id, email, name)
+        const manager = makeManager(name, id, email, officeNumber);
 
+        expect(manager.name).toEqual(name);
         expect(manager.id).toEqual(id);
         expect(manager.email).toEqual(email);
-        expect(manager.name).toEqual(name);
+        expect(manager.officeNumber).toEqual(officeNumber);
+
+
     });
 
-    it("should return Manager when getRole() is called", () => {
+    it("Should return Manager when getRole() is called", () => {
+        
         const expected = "Manager";
         const manager = makeManager();
         expect(manager.getRole()).toEqual(expected);
-
     });
 
-    it("should return email when getEmail() is called", () => {
-        const expected = "Email";
-        const manager = makeManager(123, expected);
+    it("Should return email when getEmail() is called", () => {
+        
+        const expected = "test@email.com";
+        const manager = makeManager(123, 234, expected, 789);
         expect(manager.getEmail()).toEqual(expected);
-
     });
 
-    it("should return Manager when getName() is called", () => {
-        const expected = "Maccas";
-        const manager = makeManager(123, "blah@mail.com", expected);
-        expect(manager.getName()).toEqual(expected);
-
+    it("Should return name when getName() is called", () => {
+        
+        const expected = "Manager";
+        const manager = makeManager(expected, 234, 567, 789);
+        expect(manager.getRole()).toEqual(expected);
     });
 
-    it("should return ManagerBaseManager when getId() is called", () => {
-        const expected = 123;
-        const manager = makeManager(expected);
+    it("Should return an ID when getId()) is called", () => {
+        
+        const expected = "123";
+        const manager = makeManager(123, expected, 567, 789);
         expect(manager.getId()).toEqual(expected);
+    });
+
+    it("Should return officeNumber when getGithub() is called", () => {
+
+        const expected = "officeNumber";
+        const manager = makeManager(123, 234, 567, expected);
+        expect(manager.getOfficeNumber()).toEqual(expected);
 
     });
-});
+})
