@@ -25,7 +25,7 @@
   
 💻 Below is a gif showing the functionality of the application:
   
-![README Generator] (dist\Untitled_ Oct 31, 2021 8_37 PM.gif)
+![README Generator] (C:\Users\shaun\Documents\Employee-Generator\dist\Team-Gen.gif)
   
 🎥 The full movie file showing functionality of the application can be found [here](https://watch.screencastify.com/v/ah6mZFukT5dLN8MD5SRm)
   
