@@ -25,7 +25,7 @@
   
 💻 Below is a gif showing the functionality of the application:
   
-![README Generator] (C:\Users\shaun\Documents\Employee-Generator\dist\Team-Gen.gif)
+![README Generator] (https://watch.screencastify.com/v/ah6mZFukT5dLN8MD5SRm)
   
 🎥 The full movie file showing functionality of the application can be found [here](https://watch.screencastify.com/v/ah6mZFukT5dLN8MD5SRm)
   
