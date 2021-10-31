@@ -22,10 +22,7 @@
 ## Description
   
 🔍 A node.js application that uses user input from inquirer to populate an index.html file that shows all employees on the team in a card format. The html file is created in the main directory and can be found [here](index.html)  
-  
-💻 Below is a gif showing the functionality of the application:
-  
-![README Generator] (https://watch.screencastify.com/v/ah6mZFukT5dLN8MD5SRm)
+
   
 🎥 The full movie file showing functionality of the application can be found [here](https://watch.screencastify.com/v/ah6mZFukT5dLN8MD5SRm)
   
